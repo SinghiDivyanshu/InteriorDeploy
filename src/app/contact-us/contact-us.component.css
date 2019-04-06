@@ -1,0 +1,61 @@
+header{
+    padding-top: 5%;
+
+    
+    background-image: url('/assets/Images/background.jpg');
+    height: max-content;
+    background-repeat:repeat;
+    background-size: cover;
+    background-attachment:fixed; 
+    
+}
+
+.overlay{
+    background-color: rgba(11, 41, 41, .71);
+    height: 1000px;
+    margin-top: -5%;
+}
+
+.container{    
+    padding-top: 10%;
+}
+/* 
+.test{
+   background-color: green;
+   height: 100%;
+   width: 100%;
+   margin-top: 100px;
+}
+ */
+.contact-from
+{
+    background-color: lightblue; 
+    margin-left: 5%;
+    width: 100%;
+} 
+
+.ContactUs
+{
+    background-color: lightblue;
+    margin-left: 5%;
+    /* margin: 5%;
+    margin-left: 10%; */
+
+}
+
+.pull-right{
+    margin-left: 100%;
+
+}
+
+input, textarea{
+    margin-top: 5%;
+    margin-left: 2%;
+    width: 100%;
+}
+
+.btn
+{
+    margin-top: 5%;
+    margin-left: 2%;
+}
