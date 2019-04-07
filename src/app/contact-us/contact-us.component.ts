@@ -37,17 +37,6 @@ export class ContactUSComponent implements OnInit {
   constructor(private _apiService: FormAPIService ) { }
   
   onSubmit():void{
-    //let url = "http://localhost:8082/contactUs"; //change the url according to your mapping
-    
-    /* this._apiService.getContactInfo( this.model.name, this.model.email, this.model.contact, this.model.message ).subscribe(
-      result => {
-       alert("Sent")
-      },
-      error => {
-        alert("An error occured")
-      }
-    ); */
-    
     this._apiService.getContactInfo( this.model.name, this.model.email, this.model.contact, this.model.message )
     .subscribe((response)=>{
       const result = response;  
