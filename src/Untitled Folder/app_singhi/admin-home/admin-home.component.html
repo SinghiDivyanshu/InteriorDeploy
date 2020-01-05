@@ -1,0 +1,22 @@
+<header>
+    <div>
+      <div class="table row">
+        <div class="col-xs-2 col-md-2">
+          <div class="list-group tabs">
+            <a routerLink="" class="list-group-item" routerLink="fileUpload">Upload File</a>
+            <a href="#" class="list-group-item" routerLink="createCatergory">Create Category</a>
+            <a  class="list-group-item" routerLink="deleteProject">Delete Project</a>
+            <a  class="list-group-item" (click)="logout()">Logut</a>
+            
+          </div>
+        </div>
+  
+        <div class="col-md-10 col-xs-10" >
+            
+            <router-outlet></router-outlet>
+  
+        </div>
+  
+  
+      </div>
+    </div>

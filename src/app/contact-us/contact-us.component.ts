@@ -37,6 +37,8 @@ export class ContactUSComponent implements OnInit {
   constructor(private _apiService: FormAPIService ) { }
   
   onSubmit():void{
+    console.log("yoyoy");
+    
     this._apiService.getContactInfo( this.model.name, this.model.email, this.model.contact, this.model.message )
     .subscribe((response)=>{
       const result = response;  

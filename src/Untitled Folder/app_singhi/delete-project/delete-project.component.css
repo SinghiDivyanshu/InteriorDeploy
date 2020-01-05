@@ -1,0 +1,20 @@
+table {
+    padding: 5%;
+    margin: 5%;
+    background-color: white;
+}
+
+
+thead {
+  background: #395870;
+  background: linear-gradient(#49708f, #293f50);
+  color: #fff;
+  font-size: 11px;
+  text-transform: uppercase;
+}
+
+li > a{
+  
+  margin-right: 10px;
+  color: blue;
+}

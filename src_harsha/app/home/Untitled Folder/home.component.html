@@ -1,0 +1,325 @@
+<style>
+  @import url('https://fonts.googleapis.com/css?family=Aldrich&display=swap');
+</style>
+<style>
+  @import url('https://fonts.googleapis.com/css?family=Bad+Script&display=swap');
+</style>
+<style>
+  @import url('https://fonts.googleapis.com/css?family=Neucha&display=swap');
+</style>
+<style>
+  @import url('https://www.w3schools.com/w3css/4/w3.css');
+</style>
+<style>
+  @import url('https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap');
+</style>
+<style>
+  @import url('https://fonts.googleapis.com/css?family=Prompt&display=swap');
+</style>
+<style>
+  @import url('https://fonts.googleapis.com/css?family=Baumans&display=swap');
+</style>
+<style>
+  @import url('https://fonts.googleapis.com/css?family=Mansalva&display=swap');
+</style>
+<style>
+  @import url('https://fonts.googleapis.com/css?family=Baumans&display=swap');
+</style>
+<div class=" overlay" style="position:fixed;scroll-behavior: auto">
+
+  <div class="imageList">
+    <ngb-carousel *ngIf="images">
+
+      <li *ngFor="let image of images">
+        <ng-template ngbSlide>
+          <img [src]="image" alt="Random first slide">
+          <div class="carousel-caption">
+
+            <nav class="navbar   navbar-expand bg-white nav-wrapper" style="border-radius: 10px;">
+              <!-- <a class="navbar-brand" routerLink=""><fa name="fas fa-home"></fa></a> -->
+
+              <i class="fa fa-chevron-up" class="message-box" style="font-size:36px"></i>
+              <img src="/assets/Images/NOTI2.png"
+                style="position: absolute;left: 5%;width:80px;height:80px;margin-top: 0%;position: fixed;">
+
+              <div class="collapse navbar-collapse " id="navbarSupportedContent">
+
+
+                <ul class="navbar-nav" fxFlex>
+
+                  <li class="nav-item ">
+                    <a class="nav-link" href="" routerLink="">
+                      Home
+                    </a>
+                  </li>
+                  <li class="nav-item ">
+                    <a class="nav-link nav-txt" href="" routerLink="aboutUs">About Us </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link nav-txt" href="" routerLink="contactUs">Contact Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link nav-txt" href="" routerLink="contactUs">Work </a>
+                  </li>
+                  <li class="nav-item ">
+                    <a class="nav-link nav-txt" href="" routerLink="" style="" (click)="sendMsg();">Send Message </a>
+                  </li>
+                  <li class="nav-item ">
+                    <a class="nav-link nav-txt" href="" routerLink="">Vision </a>
+                  </li>
+                  <li ngbDropdown class="nav-item dropdown ">
+                    <a class="nav-link  dropdown-toggle nav-txt" id="navbarDropdown" style="color:gold;" role="button"
+                      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Categories
+                    </a>
+                    <div ngbDropdownMenu class="dropdown" aria-labelledby="navbarDropdown">
+                      <div class="dropdown-content">
+                        <a href="">Home</a>
+                        <a href="">Kitchen</a>
+                        <a href="">Office</a>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+                <!-- <img class="navbar-icon" src="/assets/Images/notion.jpeg"/>-->
+              </div>
+            </nav>
+
+
+
+
+            <div>
+
+
+              <img src="/assets/Images/png.png" style="
+                  margin-bottom:3%;width:50%;height:40%;margin-left:-35%">
+
+              <h1 [@LRAnimation]
+                style="margin-left:5%;color:white; font-family: 'Bad Script', cursive;font-size: 24px;text-align: left">
+                "
+                We design intertors that breathes lifes,<br>
+                reflects your passion, and leaves a lasting<br>
+                impresssion that you will love."</h1>
+
+
+              <span
+                style="height: 50px; margin-top: 10%;width: 50px;border-radius: 50%;display: inline-block;background-color: white;margin-left: 5%;margin-top: 2%">
+
+      <li><a href="https://www.instagram.com/explore/locations/493831237481436/notion-interio/"
+          style="margin-left:27%;margin-top: -30%;color: dodgerblue;font-size:20px;" class="icoInstagram"
+          title="Instagram"><i class="fa fa-instagram"></i></a></li>
+      <!-- <li><a (click)="sendMsg();" class="icoGoogle" style="margin-left: 0.5%;" title="Gmail"><i class="fa fa-google"></i></a></li>-->
+      </span>
+      <span
+        style="height: 50px; width: 50px;border-radius: 50%;display: inline-block;background-color: white;margin-left: 2%">
+
+        <li><a href="https://www.facebook.com/notioninterio/" class="icoFacebook"
+            style="margin-left:33%;margin-top: -30%;color: dodgerblue;font-size:20px;" title="Facebook"><i
+              class="fa fa-facebook"></i></a></li>
+      </span>
+
+      <span
+        style="height: 50px; width: 50px;border-radius: 50%;display: inline-block;background-color: white;margin-left: 2%">
+
+        <li><a href="https://www.facebook.com/notioninterio/" class="icoLinkedin"
+            style="margin-left:33%;margin-top: -30%;color: dodgerblue; font-size:20px;" title="Linkedin"><i
+              class="fa fa-linkedin"></i></a></li>
+      </span>
+
+  </div>
+</div>
+</ng-template>
+</li>
+
+
+</ngb-carousel>
+
+
+</div>
+
+</div>
+
+<br>
+
+<div style="position: sticky;margin-top: 39%; scroll-behavior: auto;background-image:url(assets/Images/18.jpg);
+background-repeat: no-repeat; background-size: cover;margin-right: 0%;
+margin-left:0%">
+
+
+  <img src="assets\Images\3.png" style="width:30%;height: 30%;margin-left: 30%;margin-top: 1%">
+  <span style="margin-left: -22%; font-size:40px; font-family: 'Aldrich', sans-serif; color:gold;">Notion Interio</span>
+  <!-- <hr class="hrStyle" style="width:30%;margin-left: 8%"> -->
+
+
+  <p style="text-align: justify; scroll-behavior: auto;font-family: 'Prompt', sans-serif; margin-left: 15%; margin-right: 12%;color:whitesmoke;margin-bottom: 5%;
+    ">
+
+
+    At <b style="font-size:22px;color:dodgerblue">Notion Interio,</b>We bring together functionality and aesthetics to
+    provide homeowners with customised and efficient designs. Our designers specialise in <b
+      style="font-size:19px;color:orange">Home Design, Kitchen Interior,Office Interior</b> and help you create a home
+    personalised to suit your lifestyle.
+    Our designs are driven by vibrant color & pattern complimented with textural & sculptural details.
+    We are here to help you find the best home decor and home design to match <b
+      style="font-size:22px;color:dodgerblue"> your needs and style.</b>
+    Our designs reflect each client from concept visualization down to the last detail. The end result is an exceptional
+    design that serves you both functionally and aesthetically.
+    Your one stop for complete interiors.
+  </p>
+
+
+  <div>
+    <img src="assets\Images\3.png" style="width:30%;height: 30%;margin-left: 30%;margin-top: 1%">
+    <span style="margin-left: -22%; font-size:40px; font-family: 'Aldrich', sans-serif; color:gold;">What we do?</span>
+  </div>
+
+
+
+  
+  <h1 style="position: absolute;
+        top: 21%;
+        left: 48%;
+        transform: translate(-50%, -50%);color:cornsilk;font-weight: 900" >office</h1>
+  <p style="position: absolute; 
+        top: 18%; font-size: 30px;  
+
+        left: 22%;font-family: 'Kaushan Script', cursive;
+        transform: translate(-50%, -50%);color:dodgerblue;font-weight: 500">
+    OUR EXPERTISE CONCEPT
+  </p>
+  <p style="position: absolute; 
+  top: 20%; font-size: 20px;
+  text-align: justify;  
+  color:lightyellow;
+  left:8%;font-family: 'Kaushan Script', cursive;">Conceptualization of ideas, creating Concepts and visualization,<br>
+    Space planning and operational layouts.
+     <br>   Conceptualization of ideas,<br> creating Concepts and visualization.
+  </p>
+  <img src="assets\Images\109.png" class="container1 image"
+    style="margin-left: 45%;margin-top: 8%;width:50%;height:50%;"><br>
+  <h1 style="position: absolute;margin-left: 8vw;margin-top: 23%;color:cornsilk;font-weight: 900">Home</h1>
+
+  <p style="position: absolute; 
+        top: 32%; font-size: 30px;  
+
+        left: 72%;font-family: 'Kaushan Script', cursive;
+        transform: translate(-50%, -50%);color:dodgerblue;font-weight: 500">
+    DESIGN AND BUILT
+
+  </p>
+  <p style="position: absolute; 
+  top: 34%; font-size: 20px;
+  margin-right: 2%;
+  text-align: justify;  
+  color:lightyellow;
+  left:55%;font-family: 'Kaushan Script', cursive;">Designing the concept, layouts, and converting it into Reality
+    Turnkey/
+    end to end design and built Solution to the end user.All the designs are made according to the demands, thoughts,
+    creativity
+    contributed by the client. The needs of the client are taken very seriously.We design homes and places with the help
+    of the best furnishing available
+  </p>
+
+  <img src="assets\Images\11.png" class="container1 image"
+    style="margin-left: 1%;margin-top: 6%;width:50%;height:50%;" >
+  <h1 style="position: absolute;margin-left: 72vw;margin-top: 23%;color:lightyellow;font-weight: 900">Kitchen</h1>
+  
+
+  <p style="position: absolute; 
+        top: 50%; font-size: 40px;  
+
+        left: 22%;font-family: 'Kaushan Script', cursive;
+        transform: translate(-50%, -50%);color:dodgerblue;font-weight: 500">
+    MANAGEMENT
+  </p>
+  <p style="position: absolute; 
+  top: 52%; font-size: 20px;
+margin-right: 55%;
+  text-align: justify;  
+  color:lightyellow;
+  left:8%;font-family: 'Kaushan Script', cursive;">All the designs are made according to the demands, thoughts,
+    creativity
+    contributed by the client. The needs of the client are taken very seriously.We design homes and places with the help
+    of the best furnishing available
+  </p>
+  <img src="assets\Images\12.png" class="container1 image"
+    style="margin-left: 45%;margin-top: 8%;width:50%;height:50%;"><br>
+  <br><br><br><br>
+  <div>
+    <img src="assets\Images\3.png" style="width:30%;height: 30%;margin-left: 30%;margin-top: 1%">
+    <span style="margin-left: -20%; font-size:40px; font-family: 'Aldrich', sans-serif; color:gold;">Our
+      Process</span>
+    <!-- <hr class="hrStyle" style="width:30%;margin-left: 8%"> -->
+  </div>
+  <div style="background-color:transparent;
+
+      margin-left: 53%;;height:80%;width:100%;margin-left:0%;margin-top:2%;align-content: center">
+    <img src="/assets/Images/no1.png" style="margin-left: 38%;width:3%;height:2%; ">
+    <font style="font-size:20px;margin-left: 1%;margin-top:2%;color:white;font-family: 'Prompt', sans-serif;">
+      DESIGN AND STUDY</font> <i class="fa fa-pencil-square-o"
+      style="font-size:26px;margin-left: 1%;margin-top: 2%;color:gold;"></i> <br>
+    <img src="/assets/Images/no2.png" style="margin-left: 38%;width:3%;height:2%;">
+    <font style="font-size:20px;margin-left: 1%;color:white;font-family: 'Prompt', sans-serif;">MATERIAL
+      MANAGEMENT</font>
+
+    <i class="fa fa-truck" style="font-size:26px;margin-left: 1%;margin-top: 2%;color:gold;"></i> <br>
+    <img src="/assets/Images/no3.png" style="margin-left: 38%;width:3%;height:2%;">
+    <font style="font-size:20px;margin-left: 1%;color:white;font-family: 'Prompt', sans-serif;">PROJECT SCHEDULE
+    </font>
+    <i class="fa fa-calendar" style="font-size:26px;margin-left: 1%;margin-top: 2%;color:gold;"></i>
+
+    <br>
+
+
+
+    <img src="/assets/Images/no4.png" style="margin-left: 38%;width:3%;height:2%;">
+    <font style="font-size:20px;margin-left: 1%;color:white;font-family: 'Prompt', sans-serif;">PROJECT EXECUTIOM
+    </font>
+
+    <i class="fa fa-user" style="font-size:26px;margin-left:1%;margin-top: 2%;color:gold;"></i>
+
+    <br>
+    <img src="/assets/Images/no5.png" style="margin-left: 38%;width:3%;height:2%;">
+    <font style="font-size:20px;margin-left: 1%;color:white;font-family: 'Prompt', sans-serif;">HAND OVER IN TIME
+      PERIOD</font>
+
+    <i class="fa fa-clock-o" style="font-size:26px;margin-left: 1%;margin-top: 2%;color:gold;"></i> <br> <br>
+    <br>
+    <div style="background-image: url('assets/Images/5.jpg');width: 110%;padding: 22.25rem;
+              background-repeat: no-repeat; background-size: cover;margin-right: 0%;
+margin-left:-2%" class="card-body">
+      <div>
+        <img src="assets\Images\3.png" style="width:50%;height: 50%;margin-left:11%;margin-top: -45%">
+        <p style="margin-left:32%;margin-top:-30%;font-size:40px; font-family: 'Aldrich', sans-serif; color:gold;">Our
+          Clients</p>
+
+        <img src="assets\Images\15.png" style="width:20%;height: 20%;margin-left:-12%;margin-top: 14%">
+        <img src="assets\Images\15.png" style="width:20%;height: 20%;margin-left:3%;margin-top: 14%">
+        <img src="assets\Images\15.png" style="width:20%;height: 20%;margin-left:3%;margin-top: 14%">
+        <img src="assets\Images\15.png" style="width:20%;height: 20%;margin-left:3%;margin-top: 14%">
+        <img src="assets\Images\15.png" style="width:20%;height: 20%;margin-left:3%;margin-top: 14%">
+
+        <p id="vMore">View More</p>
+
+
+      </div>
+
+
+    </div>
+
+    <div style="padding:  8.25rem;
+             
+margin-left:-2%" class="card-body"></div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+</div>

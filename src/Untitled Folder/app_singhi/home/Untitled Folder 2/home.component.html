@@ -1,0 +1,170 @@
+<header>
+  <div class="overlay">
+    <!--     <img class="imgLogo"src="/assets/Images/NOTION INTERIO LOGO JPG 1.jpg" alt=""> -->
+  </div>
+</header>
+
+
+<div class="category">
+  <div class="navDiv">
+    <nav>
+      <button class="navTag col-4 btn" href="#" (click)="oneStop()">
+        <!-- <fa name="truck fa-3x" animation="" (click)="oneStop()"></fa> -->
+        <div class="FATest">
+          <h2>ONE STOP</h2>
+        </div>
+      </button>
+      <button class="navTag col-4 btn" href="" (click)="Speed()">
+        <!-- <fa name="bolt fa-3x" animation="" (click)="Speed()"></fa> -->
+        <div class="FATest">
+          <h2>SPEED</h2>
+        </div>
+      </button>
+      <button class="navTag col-4 btn" href="" (click)="Transparency()">
+        <!-- <fa name="credit-card-alt fa-3x" animation=""></fa> -->
+        <div class="FATest">
+          <h2>TRANSPARENCY</h2>
+        </div>
+      </button>
+    </nav>
+  </div>
+
+  <div class="ss">
+    <div class="container">
+      <div *ngIf="showOneStop" [@oneStopIn]>
+        <p>Notion interio is a one stop-shop for every commercial or residential interior design requirement. Notion
+          interio is turnkey.
+          This means that we are a complete interior design solution provider, for both design and execution.</p>
+      </div>
+
+      <div *ngIf="showSpeed" [@speedIN]>
+        <p>At Notion Interio we sincerely appreciate the invaluable importance of your precious time.
+          Because Notion Interio is turn-key, every process from design through to execution is fast tracked. The result
+          is not only market leading quality,
+          finishing and attention to detail but also project delivery times that are as less as half that of the
+          competition.</p>
+      </div>
+
+      <div *ngIf="showTransparency" [@TransparencyIN]>
+        <p>With Notion Interio you can expect complete transparency on all matters.
+          Our detailed and thorough BOQ’s (bills of quantity) bring clarity and reassurance to all our dealings.</p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="wrapper">
+    <div class="row">
+      <h1>OUR WORK</h1>
+      <div class="stage">
+        <div class="">
+          <img class = "categoryImage" src="assets/uploads/kitchen/kitchen.jpg" alt="" routerLink="kitchenGallery">
+          <img class = "categoryImage" src="assets/uploads/kitchen/kitchen.jpg" alt="" routerLink="officeGallery">
+          <img class = "categoryImage" src="assets/uploads/kitchen/kitchen.jpg" alt="" routerLink="">
+          <img class = "categoryImage" src="assets/uploads/kitchen/kitchen.jpg" alt="" routerLink="">
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <!--    
+  <div class="wrapper">
+    <div class="row">
+        <h1>OUR WORK</h1> 
+      <ul class="stage container">
+        <li class="scene col-lg-4"><a href="" routerLink="kitchenGallery">
+            <div class="movie">
+              <div class="poster"></div>
+              <div class="info">
+                <header>
+                  <h1>Kitchen</h1>
+                  <span class="year">1946</span>
+                  <span class="rating">PG</span>
+                  <span class="duration">130 minutes</span>
+                </header>
+                <p>
+                  In Bedford Falls, New York on Christmas Eve, George Bailey is deeply troubled. Prayers for his
+                  well-being
+                  from friends and family reach Heaven. Clarence Odbody, Angel Second Class, is assigned to visit Earth
+                  to
+                  save George, thereby earning his wings. Franklin and Joseph, the head angels, review George's life
+                  with
+                  Clarence.
+                </p>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class="scene col-lg-4">
+          <div class="movie">
+            <div class="poster"></div>
+            <div class="info">
+              <header>
+                <h1>Home</h1>
+                <span class="year">1946</span>
+                <span class="rating">PG</span>
+                <span class="duration">130 minutes</span>
+              </header>
+              <p>
+                In Bedford Falls, New York on Christmas Eve, George Bailey is deeply troubled. Prayers for his
+                well-being
+                from friends and family reach Heaven. Clarence Odbody, Angel Second Class, is assigned to visit Earth to
+                save George, thereby earning his wings. Franklin and Joseph, the head angels, review George's life with
+                Clarence.
+              </p>
+            </div>
+          </div>
+        </li>
+        <li class="scene col-lg-4">
+          <div class="movie">
+            <div class="poster"></div>
+            <div class="info">
+              <header>
+                <h1>Office</h1>
+                <span class="year">1946</span>
+                <span class="rating">PG</span>
+                <span class="duration">130 minutes</span>
+              </header>
+              <p>
+                In Bedford Falls, New York on Christmas Eve, George Bailey is deeply troubled. Prayers for his
+                well-being
+                from friends and family reach Heaven. Clarence Odbody, Angel Second Class, is assigned to visit Earth to
+                save George, thereby earning his wings. Franklin and Joseph, the head angels, review George's life with
+                Clarence.
+              </p>
+            </div>
+          </div>
+        </li>
+
+      </ul>
+
+    </div>
+  </div>
+
+ -->
+  <div class="wrapper">
+    <h1>What we Have Earn</h1>
+    <br>
+    <div class="row">
+      <div class="col-md-4">
+        <h3>EXPERIENCE</h3>
+        <p>With over five years of experience in the field of residential and commercial interior design and contracting,
+           Notion Interio is suitably equipped to handle a wide array of projects.
+            With us you can rest assured that you are in good hands.</p>
+      </div>
+
+      <div class="col-md-4">
+        <h3>EXCEPTIONAL DESIGN, QUALITY AND FINISHING</h3>
+        <p>Notion Interio is well known for its thoughtful approach to design and
+           its sharp attention to details, quality and finishing.
+           Our spaces are well planned, beautifully detailed and built to last.</p>
+      </div>
+
+      <div class="col-md-4">
+        <h3>IMPECCABLE CUSTOMER SATISFACTION RECORD</h3>
+        <p>Notion Interio believes in cultivating strong and lasting relations.
+           Our prompt, friendly and efficient customer service will exceed your expectations.</p>
+      </div>
+    </div>
+  </div>
+</div>

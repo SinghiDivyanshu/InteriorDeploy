@@ -1,0 +1,384 @@
+<style>
+  @import url('https://fonts.googleapis.com/css?family=Aldrich&display=swap');
+</style>
+<style>
+  @import url('https://fonts.googleapis.com/css?family=Bad+Script&display=swap');
+</style>
+<style>
+  @import url('https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap');
+</style>
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Lakki+Reddy&display=swap');
+    </style>
+
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great&display=swap');
+    </style>
+
+<div class=" overlay" style="position:fixed;scroll-behavior: auto">
+
+  <div class="imageList">
+    <ngb-carousel *ngIf="images">
+
+      <li *ngFor="let image of images">
+        <ng-template ngbSlide>
+          <img [src]="image" alt="Random first slide">
+          <div class="carousel-caption">
+              <nav class="navbar navbar-expand-md" style="border-radius: 10px;">
+                  <img src="/assets/Images/NOTI2.png" class="logo">
+                  <div class="collapse navbar-collapse" data-toggle="collapse" id="main-navigation">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                          <a class="nav-link nav-txt" href="" routerLink="">
+                              Home
+                            </a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link nav-txt" href="" routerLink="aboutUs">About Us </a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link nav-txt" href="" routerLink="contactUs">Contact Us</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link nav-txt" href="" routerLink="contactUs">Work </a>
+                        </li>
+                        <li class="nav-item ">
+                          <a class="nav-link nav-txt" href="" routerLink=""  (click)="sendMsg();">Send Message </a>
+                        </li>
+                        <li class="nav-item ">
+                          <a class="nav-link nav-txt" href="" routerLink="vision">Vision </a>
+                        </li>
+                        <li ngbDropdown class="nav-item dropdown">
+                          <a class="nav-link nav-txt dropdown-toggle" id="navbarDropdown" style="color:gold;" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Categories
+                          </a>
+                          <div ngbDropdownMenu class="dropdown" aria-labelledby="navbarDropdown">
+                            <div class="dropdown-content">
+                              <a class="nav-link nav-txt" href="">Home</a>
+                              <a class="nav-link nav-txt" href="">Kitchen</a>
+                              <a class="nav-link nav-txt" href="" >Office</a>
+                            </div>
+                          </div>
+                        </li>
+                    </ul>
+                  </div>
+              </nav>
+        
+            
+            <div>
+
+
+              <img src="/assets/Images/png.png" class="titleImg">
+            </div>
+            <div>
+              <h1 [@LRAnimation] class="titleLine">
+                "
+                We design intertors that breathes lifes,<br>
+                reflects your passion, and leaves a lasting<br>
+                impresssion that you will love."</h1>
+            </div>
+                  <div class="socialMediaGrpIcons">
+              <span class="socialMediaSpanInsta">
+                <li>
+                    <a href="https://www.instagram.com/explore/locations/493831237481436/notion-interio/"class="icoInstagram" title="Instagram"><i class="fa fa-instagram"></i>
+                     </a>
+                 </li>
+           </span>
+      <span class="socialMediaSpanFacebook">
+
+        <li><a href="https://www.facebook.com/notioninterio/" class="icoFacebook"title="Facebook"><i class="fa fa-facebook"></i></a></li>
+      </span>
+
+      <span class="socialMediaSpanLinkedin">
+
+        <li><a href="https://www.facebook.com/notioninterio/" class="icoLinkedin"  title="Linkedin"><i
+              class="fa fa-linkedin"></i></a></li>
+      </span>
+    </div>
+  
+</div>
+</ng-template>
+</li>
+
+
+</ngb-carousel>
+
+
+</div>
+
+</div>
+
+<br>
+
+<div class="homeBgDiv">
+
+
+  <img src="assets\Images\3.png" class="pencilBorder">
+  <span class="title1">Notion Interio</span>
+  <p class="notionText">At <b style="font-size:22px;color:dodgerblue">Notion Interio,</b>We bring together functionality and aesthetics to
+    provide homeowners with customised and efficient designs. Our designers specialise in <b
+      style="font-size:19px;color:orange">Home Design, Kitchen Interior,Office Interior</b> and help you create a home
+    personalised to suit your lifestyle.
+    Our designs are driven by vibrant color & pattern complimented with textural & sculptural details.
+    We are here to help you find the best home decor and home design to match <b
+      style="font-size:22px;color:dodgerblue"> your needs and style.</b>
+    Our designs reflect each client from concept visualization down to the last detail. The end result is an exceptional
+    design that serves you both functionally and aesthetically.
+    Your one stop for complete interiors.
+  </p>
+<div>
+    <img src="assets\Images\3.png" class="pencilBorder img-fluid">
+    <span class="title1">What we do?</span>
+  </div>
+  <p class="subTitle1" style="font-family: 'Fredericka the Great', cursive;">
+    OUR EXPERTISE CONCEPT
+  </p>
+  <p class="subDesc1" >Conceptualization of ideas, creating Concepts and visualization,<br>
+    Space planning and operational layouts.
+      Conceptualization of ideas,creating Concepts and visualization.
+  </p>
+  <img src="assets\Images\109.png" class="container1" class="officeImg">
+  <h1 class="cardHeadline1 cardHeadline" routerLink="officeGallery">Officeee</h1>
+  <br>
+  <p class="subTitle2" style="font-family: 'Fredericka the Great', cursive;">
+    DESIGN AND BUILT
+  </p>
+  <p class="subDesc2">Designing the concept, layouts, and converting it into Reality
+    Turnkey/
+    end to end design and built Solution to the end user.All the designs are made according to the demands, thoughts,
+    creativity
+    contributed by the client. 
+  </p>
+
+  <img src="assets\Images\11.png" class="container1" class="homeImg"><br>
+  <h1 class="cardHeadline2 cardHeadline">Home</h1>
+
+  <p class="subTitle3"  style="font-family: 'Fredericka the Great', cursive;">
+    MANAGEMENT
+  </p>
+  <p class="subDesc3">Bringing the promising team together to the bst of their potential &
+    driving to have a great significance in such short period of time. </p>
+    <h1 class=" cardHeadline3 cardHeadline">Kitchen</h1>
+
+  <img src="assets\Images\12.png" class="container1" class="kitchenImg"><br>
+  <br><br><br><br>
+  <div>
+    <img src="assets\Images\3.png" class="pencilBorder">
+    <span class="title1">Our
+      Process</span>
+  </div>
+  <div>
+    <img src="/assets/Images/no1.png" class="numImg img-fluid">
+    <font class="processStepsFont">
+      DESIGN AND STUDY</font> <i class="fa fa-pencil-square-o processIcons"></i> <br>
+    <img src="/assets/Images/no2.png" class="numImg">
+    <font class="processStepsFont">MATERIAL
+      MANAGEMENT</font>
+
+    <i class="fa fa-truck processIcons"></i> <br>
+    <img src="/assets/Images/no3.png" class="numImg img-fluid">
+    <font class="processStepsFont">PROJECT SCHEDULE
+    </font>
+    <i class="fa fa-calendar processIcons"></i>
+      <br>
+    <img src="/assets/Images/no4.png" class="numImg img-fluid">
+    <font class="processStepsFont">PROJECT EXECUTIOM
+    </font>
+
+    <i class="fa fa-user processIcons"></i>
+
+    <br>
+    <img src="/assets/Images/no5.png" class="numImg img-fluid">
+    <font class="processStepsFont">HAND OVER IN TIME
+      PERIOD</font>
+
+    <i class="fa fa-clock-o processIcons"></i> <br> <br>
+    <br>
+    <div class="card-body clientBgDiv">
+      <div>
+       
+        <p class="titleClient">Our Clients</p>
+        <div style=" width:80%;height: 70%; margin-top: 5%; margin-left:12%;overflow: auto;">
+        <img src="assets\Images\15.png" class="clientImg img-fluid">
+        
+        <img src="assets\Images\15.png" class="clientImg1 img-fluid">
+        <img src="assets\Images\15.png" class="clientImg1 img-fluid">
+        <img src="assets\Images\15.png" class="clientImg1 img-fluid">
+        <img src="assets\Images\15.png" class="clientImg1 img-fluid">
+        <h1 style="color:blanchedalmond;; margin-top: -7.5%; font-size: 40px; margin-left: 19%;">SW</h1>
+        <h1 style="color: blanchedalmond;; margin-top: -6%; font-size: 40px; margin-left: 33%;">SZ</h1>
+         <h1 style="color:blanchedalmond;; margin-top: -5.5%; font-size: 40px; margin-left: 46%;">SH</h1>
+        <h1 style="color:blanchedalmond;; margin-top: -5.5%; font-size: 40px; margin-left: 59%;">SS</h1>
+        <h1 style="color: blanchedalmond;; margin-top: -5.5%; font-size: 40px; margin-left: 72%;">PD</h1>
+
+
+        <h1 style="color: gold; margin-top: 5.5%; font-size: 15px; margin-left: 14%;">Mr.Shantanu Somwanshi </h1>
+        <h1 style="color: gold; margin-top: -2.5%; font-size: 15px; margin-left: 31%;">Mr.Sai Zarkar</h1>
+         <h1 style="color: gold; margin-top: -2.5%; font-size: 15px; margin-left: 43%;">Ms.Sneha hajare</h1>
+        <h1 style="color: gold; margin-top: -2.5%; font-size: 15px; margin-left: 56%;">Mr.Sanket Tapdiya</h1>
+        <h1 style="color: gold; margin-top: -2.5%; font-size: 15px; margin-left: 70%;">Mr.Pawan Dhoot</h1>
+<br>
+            <div id="one" 
+            *ngIf="isShow" 
+             style=" height: 300px;overflow-y:scroll;overflow-x: hidden; margin-top: -3%;">
+        <img src="assets\Images\15.png" class=" clientImgMore img-fluid">
+        <img src="assets\Images\15.png" class="clientImgMore2 img-fluid" >
+        <img src="assets\Images\15.png" class="clientImgMore2 img-fluid">
+        <img src="assets\Images\15.png" class="clientImgMore2 img-fluid">
+         <img src="assets\Images\15.png" class="clientImgMore2 img-fluid">
+        
+        
+         
+       
+         
+         
+         <h1 style="color:blanchedalmond;; margin-top: -7.5%; font-size: 40px; margin-left: 20%;">SG</h1>
+         <h1 style="color: blanchedalmond;; margin-top: -6%; font-size: 40px; margin-left: 34%;">S</h1>
+          <h1 style="color:blanchedalmond;; margin-top: -5.5%; font-size: 40px; margin-left: 47%;">P</h1>
+         <h1 style="color:blanchedalmond;; margin-top: -5.5%; font-size: 40px; margin-left: 60%;">P</h1>
+         <h1 style="color: blanchedalmond;; margin-top: -5.5%; font-size: 40px; margin-left: 71%;">MK</h1>
+
+         <h1 style="color: gold; margin-top: 5.5%; font-size: 15px; margin-left: 16%;"> Dr.Shital Gangane</h1>
+         <h1 style="color: gold; margin-top: -2.5%; font-size: 15px; margin-left: 31%;"> Mr.Sarda</h1>
+          <h1 style="color: gold; margin-top: -2.5%; font-size: 15px; margin-left: 43%;">Mr.Pokharkar</h1>  
+          <h1 style="color: gold; margin-top: -2.5%; font-size: 15px; margin-left: 58%;">Mrs.Pathan</h1>
+         <h1 style="color: gold; margin-top: -2.5%; font-size: 15px; margin-left: 70%;">  Mr.Manoj kaliya</h1>
+         <br>
+         <img src="assets\Images\15.png" class="clientImgMore img-fluid">
+         <img src="assets\Images\15.png" class="clientImgMore2 img-fluid" >
+         <img src="assets\Images\15.png" class="clientImgMore2 img-fluid">
+         <img src="assets\Images\15.png" class="clientImgMore2 img-fluid">
+          <img src="assets\Images\15.png" class="clientImgMore2 img-fluid">
+        
+       
+
+
+          <h1 style="color:blanchedalmond;; margin-top: -7.5%; font-size: 40px; margin-left: 21%;">Z</h1>
+          <h1 style="color: blanchedalmond;; margin-top: -6%; font-size: 40px; margin-left: 33%;">T</h1>
+           <h1 style="color:blanchedalmond;; margin-top: -5.5%; font-size: 40px; margin-left: 46%;">VJ</h1>
+          <h1 style="color:blanchedalmond;; margin-top: -5.5%; font-size: 40px; margin-left: 59%;">D</h1>
+          <h1 style="color: blanchedalmond;; margin-top: -5.5%; font-size: 40px; margin-left: 71%;">PM</h1>
+  
+  
+          <h1 style="color: gold; margin-top: 5.5%; font-size: 15px; margin-left: 20%;"> Mr. Zarkar</h1>
+          <h1 style="color: gold; margin-top: -2.5%; font-size: 15px; margin-left: 31%;"> Mr. Toshniwal</h1>
+           <h1 style="color: gold; margin-top: -2.5%; font-size: 15px; margin-left: 43%;"> Mr. Vishal Jad</h1>
+          <h1 style="color: gold; margin-top: -2.5%; font-size: 15px; margin-left: 56%;">Mr. Dahatonde</h1>
+          <h1 style="color: gold; margin-top: -2.5%; font-size: 15px; margin-left: 70%;">Mr. Premchand Muttha </h1>
+
+
+
+          <br>
+          <img src="assets\Images\15.png" class="clientImgMore img-fluid">
+          <img src="assets\Images\15.png" class="clientImgMore2 img-fluid" >
+          <img src="assets\Images\15.png" class="clientImgMore2 img-fluid">
+          <img src="assets\Images\15.png" class="clientImgMore2 img-fluid">
+           <img src="assets\Images\15.png" class="clientImgMore2 img-fluid">
+
+        
+           
+           <h1 style="color:blanchedalmond;; margin-top: -7.5%; font-size: 40px; margin-left: 19%;">SH</h1>
+           <h1 style="color: blanchedalmond;; margin-top: -6%; font-size: 40px; margin-left: 33%;">T</h1>
+            <h1 style="color:blanchedalmond;; margin-top: -5.5%; font-size: 40px; margin-left: 46%;">VJ</h1>
+           <h1 style="color:blanchedalmond;; margin-top: -5.5%; font-size: 40px; margin-left: 59%;">D</h1>
+           <h1 style="color: blanchedalmond;; margin-top: -5.5%; font-size: 40px; margin-left: 71%;">PM</h1>
+   
+   
+           <h1 style="color: gold; margin-top: 5.5%; font-size: 15px; margin-left: 17%;">  Mr. Sandeep hazari</h1>
+           <h1 style="color: gold; margin-top: -2.5%; font-size: 15px; margin-left: 31%;"> Mr. Toshniwal</h1>
+            <h1 style="color: gold; margin-top: -2.5%; font-size: 15px; margin-left: 43%;"> Mr. Vishal Jad</h1>
+           <h1 style="color: gold; margin-top: -2.5%; font-size: 15px; margin-left: 56%;">Mr. Dahatonde</h1>
+           <h1 style="color: gold; margin-top: -2.5%; font-size: 15px; margin-left: 70%;">Mr. Premchand Muttha </h1>
+ 
+
+
+
+
+
+           <br>
+           <img src="assets\Images\15.png" class="clientImgMore img-fluid">
+           <img src="assets\Images\15.png" class="clientImgMore2 img-fluid" >
+           <img src="assets\Images\15.png" class="clientImgMore2 img-fluid">
+           <img src="assets\Images\15.png" class="clientImgMore2 img-fluid">
+            <img src="assets\Images\15.png" class="clientImgMore2 img-fluid">
+
+
+            <h1 style="color:blanchedalmond;; margin-top: -7.5%; font-size: 40px; margin-left: 19%;">MR</h1>
+            <h1 style="color: blanchedalmond;; margin-top: -6%; font-size: 40px; margin-left: 33%;">B</h1>
+             <h1 style="color:blanchedalmond;; margin-top: -5.5%; font-size: 40px; margin-left: 47%;">P</h1>
+            <h1 style="color:blanchedalmond;; margin-top: -5.5%; font-size: 40px; margin-left: 59%;">W</h1>
+            <h1 style="color: blanchedalmond;; margin-top: -5.5%; font-size: 40px; margin-left: 71%;">DM</h1>
+    
+    
+            <h1 style="color: gold; margin-top: 5.5%; font-size: 15px; margin-left: 17%;">  Mr. Manish Rupada</h1>
+            <h1 style="color: gold; margin-top: -2.5%; font-size: 15px; margin-left: 31%;">Mr. Burande</h1>
+             <h1 style="color: gold; margin-top: -2.5%; font-size: 15px; margin-left: 43%;">Mr. Pokharkar</h1>
+            <h1 style="color: gold; margin-top: -2.5%; font-size: 15px; margin-left: 56%;">Mr. Watamwar</h1>
+            <h1 style="color: gold; margin-top: -2.5%; font-size: 15px; margin-left: 70%;">Dr.Dhaneshwan Menkudale </h1>
+  
+ 
+                </div>
+        <button id="vMore" (click) = "toggleDisplay()">View more</button>
+      </div>
+      </div>
+    </div>
+  </div>
+  <div class="leftFooter">
+    <p class="refersion">REFERSION</p>
+    <a href="" class="aSubLink">Notion Interio</a>
+    <a href="" class="aSubLink">About Us</a>
+    <a href="" class="aSubLink">Our Process</a>
+    <a href="" class="aSubLink">Wat we do?</a>
+    <p class="reachUs">Reach Us</p>
+  <tr>
+      <td>
+          <a
+          href="https://www.google.com/maps/search/Notion+Interio++Meenatai+thackrey+Chowk,+Near+toshniwal+hospital,+Saigaon+naka,++Ambajogai/@18.7278636,76.3850171,17z/data=!3m1!4b1">
+          <i class="fa fa-map-marker locationIcon1"></i>
+         </a>
+      </td>
+      <td>
+        <a
+          href="https://www.google.com/maps/search/Notion+Interio++Meenatai+thackrey+Chowk,+Near+toshniwal+hospital,+Saigaon+naka,++Ambajogai/@18.7278636,76.3850171,17z/data=!3m1!4b1">
+          <i class="fa fa-map-marker locationIcon2" ></i>
+      </a>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p class="address1">
+          Notion Interio
+          Meenatai thackrey Chowk,
+          Near toshniwal hospital,
+          Saigaon naka,
+          Ambajogai
+          431517
+        </p>
+      </td>
+      <td>
+        <p class="address2">
+          Notion Interio,Karve Road,<br>
+          Near kothrud bus Depo,
+          Pune - 411038
+        </p>
+        <a href="#top" class="fa fa-angle-double-up goTop"></a>
+
+      </td>
+
+    </tr>
+<div class="footerDiv">
+
+      <p class="followUs">Follow us on
+        <a href="https://www.facebook.com/notioninterio/"  class="fa fa-facebook afbLink"></a>
+
+       <a href="https://www.instagram.com/explore/locations/493831237481436/notion-interio/" class="fa fa-instagram ainstaLink"></a>
+        <a href="#"  class="fa fa-linkedin alinkindInLink"></a>
+
+      </div>
+
+  </div>
+</div>
+
+
+

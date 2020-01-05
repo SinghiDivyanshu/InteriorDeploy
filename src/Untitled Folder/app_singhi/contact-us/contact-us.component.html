@@ -1,0 +1,69 @@
+<header>
+  <div class="overlay">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-sm-5 col-md-5 ContactUs" [@LRAnimation]>
+          <br>
+          <h1>Contact  <fa name="fas fa-phone " animation=""></fa></h1>
+          <hr>
+
+          <h3>First Name:</h3>
+          <h3>Last Name:</h3>
+          <h4>Mobile No. : .....</h4>
+          <h4>City: .....</h4>
+          <h4>PinCode: .....</h4>
+          <br>
+        </div>
+
+
+        <div class="col-sm-5 col-md-5 contact-from" [@RLAnimation]>
+          <br>
+          <h1>Contact From</h1>
+          <hr>
+
+          <form class="formPlace" action="" (submit)="onSubmit()">
+            <div class="from-group">
+              <!-- <label>Name:</label> -->
+              <input type="text" name="name" value="" [(ngModel)]="model.name" placeholder="Name">
+            </div>
+
+
+            <div class="form-goup">
+              <!-- <label>Email:</label> -->
+              <input type="email" name="emailId" value="" placeholder="Email Id" [(ngModel)]="model.email">
+            </div>
+
+            <div class="form-goup">
+              <!-- <label>Contact:</label> -->
+              <input type="text" name="contact" value="" placeholder="Contact" [(ngModel)]="model.contact">
+            </div>
+
+            <div class="form-goup">
+              <!-- <label>Message:</label> -->
+              <textarea type="text" name="message" value="" placeholder="Message"
+                [(ngModel)]="model.message"></textarea>
+            </div>
+
+            <div class="form-group">
+              <button type="submit" class="btn btn-success"><fa name="fas fa-envelope" animation=""></fa> Submit</button>
+            </div>
+          </form>
+
+          <!-- <input type="text" name="name" class="form-control" value="" placeholder="Name"><br>
+            <input type="email" name="email" class="form-control" value="" placeholder="Email"><br>
+            <input type="text" name="mobileNo" class="form-control" value="" placeholder="Mobile No."><br>
+            <textarea class="form-control" placeholder="Message"></textarea><br>
+  
+            <div><button class="btn btn-info" > Send</button></div> -->
+          <br>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</header>
+
+
+

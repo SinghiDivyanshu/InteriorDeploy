@@ -1,24 +1,18 @@
  
 .AncherTagDiv
 {
-    background-color: rgb(26, 24, 21);
-    position: fixed;
-    width: 100%;
-    top: 0px;
-    z-index: 1;
-    
-    
-}
-
-/* .AncherTag
-{
     background-color: transparent;
-    color: lightblue;
-    font-size: xx-large;
-    font-style: italic;
-    text-shadow: 1px 2px 1px darkblue;
     position: relative;
-    right: -50px;
-    margin: 5px;
-    
-} */
+    width: 65%;
+    top: 0px;
+    margin-left: 18%;
+    margin-right: 20%;
+    z-index: 1;
+    background-color:rgba(0,0,0,0.3);
+}
+.logo {
+      width: 100px;
+      height: 100px;
+      }
+
+

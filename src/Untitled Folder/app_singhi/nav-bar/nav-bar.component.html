@@ -1,0 +1,87 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <!-- <a class="navbar-brand" routerLink=""><fa name="fas fa-home"></fa></a> -->
+  <div class="navbar-brand" routerLink="">
+    <a class="nav-item">
+      <!-- <img src="assets/Images/B9gcWbxIEAEemUf.png" alt=""> -->
+    </a>
+  </div>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item ">
+        <a class="nav-link" href="" routerLink="">
+          <fa name="fas fa-home"></fa>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link nav-txt" href="" routerLink="">About Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link nav-txt" href="" routerLink="contactUs">Contact Us</a>
+      </li>
+      <li ngbDropdown class="nav-item dropdown">
+        <a ngbDropdownToggle class="nav-link dropdown-toggle nav-txt" id="navbarDropdown" role="button"
+          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Categories
+        </a>
+        <div ngbDropdownMenu class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="">Home</a>
+          <a class="dropdown-item" href="">Kitchen</a>
+          <a class="dropdown-item" href="">Office</a>
+        </div>
+      </li>
+    </ul>
+
+  </div>
+</nav>
+
+<button *ngIf="MessageIconFlag" class="message-box " style="width:10%; height: 4%" (click)="sendMsg()">Send Message <fa name="fas fa-comment" animation=""></fa></button>
+<!-- <fa *ngIf="MessageIconFlag" class="message-box" style="width:10%;" name="fas fa-comment" animation="" (click)="sendMsg()"></fa> -->
+
+<div class="">
+  <div class="messageForm message-box" *ngIf="formFlag">
+
+    <form class="formPlace" action="" [formGroup]="msgForm" (submit)="onSubmit()">
+
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="name" formControlName="Name">
+        <!-- <div *ngIf="msgForm.controls['Name'].hasError('required')" class="alert alert-danger">
+        enter a name
+      </div> -->
+        <div *ngIf="msgForm.controls['Name'].hasError('pattern')" class="alert alert-danger">
+          enter a valid Name( Number are excluded.)
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="text" class="form-control" id="email" formControlName="Email">
+        <div *ngIf="msgForm.controls['Email'].hasError('pattern')" class="alert alert-danger">
+          enter a valid Email
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="contact">Contact Number</label>
+        <input type="text" class="form-control" id="contact" formControlName="ContactNo">
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea type="text" class="form-control" id="message" formControlName="Message"></textarea>
+        <!-- <div *ngIf="msgForm.controls['Message'].hasError('required')" class="alert alert-danger">
+            enter a Message
+          </div> -->
+      </div>
+
+      <button type="submit" [disabled]="!msgForm.valid" class="btn btn-success" style="width: 100%">
+        <fa name="fas fa-envelope" animation=""></fa> Send Message
+      </button>
+      <button type="submit" (click)="onCancel()" class="btn btn-danger" style="width: 100%; margin-top: 1%;">
+        Cancel</button>
+
+    </form>
+  </div>
+
+</div>

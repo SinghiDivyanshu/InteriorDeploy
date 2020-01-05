@@ -1,0 +1,15 @@
+ 
+.AncherTagDiv
+{
+    background-color: rgb(26, 24, 21);
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    z-index: 1;
+}
+.logo {
+      width: 100px;
+      height: 100px;
+      }
+
+

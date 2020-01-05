@@ -1,0 +1,10 @@
+.wrapper {
+  
+    height: 460%;
+    width:35%;
+    background-image: url(/assets/Images/cad1.jpg);
+    margin-left: 53%;
+    color:	black;
+ 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

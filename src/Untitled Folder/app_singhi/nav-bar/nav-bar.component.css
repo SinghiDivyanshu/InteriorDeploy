@@ -1,0 +1,82 @@
+.navbar{
+    z-index: 1;
+    box-shadow: 2px 1px 5px 1px #95bfe5;
+
+    /* background-color: #b5b5b5; */
+}
+
+.nav-txt{
+    font-display: inherit;
+    padding-bottom: -10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    /* color: black; */
+        
+}
+.nav-item{
+    font-size: 30px;
+    
+    /* background-color: #b5b5b5; */
+}
+
+.nav-item:hover{
+    transform: scale(1.1);
+    -webkit-text-fill-color: #edb115;
+}
+
+.nav-item:focus{
+    -webkit-text-fill-color: #edb115;
+}
+
+
+.dropdown-item{
+    background-color: lightblue;
+}
+
+mr-auto
+{
+    padding: -10px;
+}
+
+
+/* Message BOX */
+
+.titleBox{
+    background-color: black;
+}
+
+.message-box{
+    z-index: 1;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    margin: 0.80%;  
+    background-color: #95bfe5;
+    box-shadow: 2px 1px 5px 4px black;
+    color: black;
+    border-radius: 15px;  
+}
+
+.message-box:hover{
+    transform: scale(1.04)
+    
+}
+.messageForm{
+    background-color: lightgray;
+    border:1px;
+    border-style: solid;
+    border-color: blue;
+    padding: 1%;
+    box-shadow: 2px 1px 5px 4px black;
+    width: 18%;
+}
+
+input.ng-invalid, textarea.ng-invalid
+{
+    border-left: 5px solid lightcoral;
+}
+
+input.ng-valid, textarea.ng-valid
+{
+    border-left: 5px solid lightgreen;
+}

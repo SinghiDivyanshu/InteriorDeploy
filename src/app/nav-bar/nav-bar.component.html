@@ -1,33 +1,120 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <!-- <a class="navbar-brand" routerLink=""><fa name="fas fa-home"></fa></a> -->
-  <div class="navbar-brand" routerLink="">
-    <a class="nav-item">
-      <!-- <img src="assets/Images/B9gcWbxIEAEemUf.png" alt=""> -->
-    </a>
+
+<div class="">
+
+
+  <div class="messageForm message-box" *ngIf="formFlag">
+
+    <form class="formPlace" action="" [formGroup]="msgForm" (submit)="onSubmit()">
+      <p style="font-style: italic;">Offline: Leave a message,<br>
+        we'll reach you soon. :-)</p>
+
+      <div class="form-group">
+
+        <input type="text" style=" border-radius: 35px;" class="form-control" placeholder="Name" id="name"
+          formControlName="Name">
+        <!-- <div *ngIf="msgForm.controls['Name'].hasError('required')" class="alert alert-danger">
+        enter a name
+      </div> -->
+        <div *ngIf="msgForm.controls['Name'].hasError('pattern')" class="alert alert-danger">
+          enter a valid Name( Number are excluded.)
+        </div>
+      </div>
+
+
+
+
+      <div class="form-group">
+
+        <input type="text" style=" border-radius: 35px;" class="form-control" placeholder="Email" id="email"
+          formControlName="Email">
+        <div *ngIf="msgForm.controls['Email'].hasError('pattern')" class="alert alert-danger">
+          enter a valid Email
+        </div>
+      </div>
+
+      <div class="form-group">
+
+        <input type="text" class="form-control" style=" border-radius: 35px;" placeholder="Contact Number" id="contact"
+          formControlName="ContactNo">
+      </div>
+
+      <div class="form-group">
+
+        <input type="text" class="form-control" style=" border-radius: 35px;" placeholder="Message" id="message"
+          formControlName="Message">
+        <!-- <div *ngIf="msgForm.controls['Message'].hasError('required')" class="alert alert-danger">
+            enter a Message
+          </div> -->
+
+
+      </div>
+
+      <button type="submit" [disabled]="!msgForm.valid" class="btn"
+        style="width: 40%; border-radius: 35px;height:6%;background-color:#0000CD;color: white ">
+        <fa name="" animation=""></fa> Send
+      </button>
+      <button type="submit" (click)="onCancel()" class="btn"
+        style="width: 40%; margin-left: 16%; border-radius: 35px;  color: white;   height:6%;margin-top: 1%;background-color:firebrick">
+        Cancel</button>
+
+    </form>
+
   </div>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item ">
-          <a class="nav-link" href="" routerLink=""><fa name="fas fa-home"></fa></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link nav-txt" href="" routerLink="">About Us</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link nav-txt" href="" routerLink="contactUs">Contact Us</a> 
-          </li>
-        <li ngbDropdown class="nav-item dropdown">
-          <a ngbDropdownToggle class="nav-link dropdown-toggle nav-txt" id="navbarDropdown"  role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Categories
-          </a>
-          <div ngbDropdownMenu class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="">Home</a>
-            <a class="dropdown-item" href="">Kitchen</a>
-            <a class="dropdown-item" href="">Office</a>
+</div>
+
+
+<nav class="navbar navbar-expand-lg navbar-light">
+  <button  (click)="isCollapsed = !isCollapsed" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup" [ngbCollapse]="isCollapsed">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link nav-txt" style="color:#32a1ff;" href="" routerLink="">
+          Home
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link nav-txt" style="color:#32a1ff;" href="" routerLink="aboutUs">About Us </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link nav-txt" href="" style="color:#32a1ff;" routerLink="contactUs">Contact Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link nav-txt" href="" style="color:#32a1ff;" routerLink="contactUs">Work </a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link nav-txt" href="" style="color:#32a1ff;" routerLink="" (click)="sendMsg()">Send Message </a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link nav-txt" href="" style="color:#32a1ff;" routerLink="vision">Vision </a>
+      </li>
+      <li ngbDropdown class="nav-item dropdown">
+        <a class="nav-link nav-txt dropdown-toggle" id="navbarDropdown" style="color:#7d7a2f;" role="button"
+          data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+          Categories
+        </a>
+        <div ngbDropdownMenu class="dropdown" aria-labelledby="navbarDropdown">
+          <div class="dropdown-content">
+            <a class="nav-link nav-txt" href="">Home</a>
+            <a class="nav-link nav-txt"  routerLink="kitchenGallery">Kitchen</a>
+            <a class="nav-link nav-txt"  routerLink="officeGallery">Office</a>
           </div>
-        </li>
-      </ul>
+        </div>
+      </li>
+      <!-- <li ngbDropdown class="d-inline-block">
+        <a class="nav-link nav-txt " style="color:#929124;" id="dropdownBasic1" ngbDropdownToggle>Toggle dropdown</a>
+        <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+            <a class="nav-link nav-txt" href="">Home</a>
+            <a class="" href="" routerLink="kitchenGallery">Kitchen</a>
+            <a class="nav-link nav-txt" href="" routerLink="officeGallery">Office</a>
+          
+        </div>
+      </li> -->
       
-    </div>
+  
+  </ul>
+</div>
 </nav>

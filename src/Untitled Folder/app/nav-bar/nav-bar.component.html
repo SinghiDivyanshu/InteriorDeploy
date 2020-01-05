@@ -1,0 +1,75 @@
+
+
+
+ 
+
+<!--<button *ngIf="MessageIconFlag" class=" message-box btn-primary " style="width:10%; height: 4%" (click)="sendMsg()"><fa name="fas fa-comment" animation=""></fa></button>
+<!-- <fa *ngIf="MessageIconFlag" class="message-box" style="width:10%;" name="fas fa-comment" animation="" (click)="sendMsg()"></fa> -->
+
+<div class="">
+                 
+
+  <div class="messageForm message-box" *ngIf="formFlag">
+
+    <form class="formPlace" action="" [formGroup]="msgForm" (submit)="onSubmit()">
+     <p style="font-style: italic;">Offline: Leave a message,<br>
+we'll  reach  you soon. :-)</p>
+
+      <div class="form-group">
+        
+        <input type="text" style=" border-radius: 35px;" class="form-control" placeholder ="Name"id="name" formControlName="Name">
+        <!-- <div *ngIf="msgForm.controls['Name'].hasError('required')" class="alert alert-danger">
+        enter a name
+      </div> -->
+        <div *ngIf="msgForm.controls['Name'].hasError('pattern')" class="alert alert-danger">
+          enter a valid Name( Number are excluded.)
+        </div>
+      </div>
+
+
+      
+
+      <div class="form-group">
+        
+        <input type="text" style=" border-radius: 35px;"  class="form-control" placeholder="Email" id="email" formControlName="Email">
+        <div *ngIf="msgForm.controls['Email'].hasError('pattern')" class="alert alert-danger">
+          enter a valid Email
+        </div>
+      </div>
+
+      <div class="form-group">
+       
+        <input type="text" class="form-control" style=" border-radius: 35px;"   placeholder="Contact Number"   id="contact" formControlName="ContactNo">
+      </div>
+
+      <div class="form-group">
+        
+        <input type="text" class="form-control" style=" border-radius: 35px;"  placeholder="Message" id="message" formControlName="Message">
+        <!-- <div *ngIf="msgForm.controls['Message'].hasError('required')" class="alert alert-danger">
+            enter a Message
+          </div> -->
+        
+      
+      </div>
+
+      <button type="submit" [disabled]="!msgForm.valid" class="btn" style="width: 40%; border-radius: 35px;height:6%;background-color:#0000CD;color: white ">
+        <fa name="" animation=""></fa> Send
+      </button>
+      <button type="submit" (click)="onCancel()" class="btn" style="width: 40%; margin-left: 16%; border-radius: 35px;  color: white;   height:6%;margin-top: 1%;background-color:firebrick">
+        Cancel</button>
+
+    </form>
+
+  </div>
+  
+</div>
+
+
+
+
+
+  
+    
+     
+   
+

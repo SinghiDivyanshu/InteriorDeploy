@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Interior</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="src/assets/Images/iconNotion.ico">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+</head>
+
+<body>
+
+    <style>
+        .spin {
+        border: 16px solid #0042A4;
+        border-radius: 50%;
+        border-top: 16px solid #3775CF;
+        border-right: 16px solid #619BEE;
+        border-bottom: 16px solid #96BFF9;
+        border-left: 16px solid #C9E0FF;
+        width: 70px;
+        height: 70px;
+top:100px;
+bottom:0;
+left:100px;
+right:0;
+
+position: absolute;
+margin:auto;
+        align-content: center;
+        justify-content: center;
+        -webkit-animation: spin 1.5s linear infinite;
+        animation: spin 1.5s linear infinite;
+        }
+        @-webkit-keyframes spin {
+        0% { -webkit-transform: rotate(0deg); }
+        100% { -webkit-transform: rotate(360deg); }
+        }
+        @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+        }
+      </style>
+
+
+
+  <app-root>
+
+    <div class="app-loading">
+        <div class="spin"></div>
+
+    </div>
+
+
+  </app-root>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!-- <header>
+
+  <div class="category">
+    <div class="gallery">
+      <div class="row">
+        <div class="col-md-4">
+          <img src="assets/Images/kitchen-layouts-wickes-u-shape-448359.jpg" alt="">
+        </div>
+        <div class="col-md-4">
+          <img src="assets/Images/The-Importance-Of-Interior-Design-4.jpg" alt="">
+        </div>
+        <div class="col-md-4">
+          <img src="assets/Images/kitchen-layouts-wickes-u-shape-448359.jpg" alt="">
+        </div>
+        <div class="col-md-4">
+          <img src="assets/Images/The-Importance-Of-Interior-Design-4.jpg" alt="">
+        </div>
+        <div class="col-md-4">
+          <img src="assets/Images/kitchen-layouts-wickes-u-shape-448359.jpg" alt="">
+        </div>
+        <div class="col-md-4">
+          <img src="assets/Images/The-Importance-Of-Interior-Design-4.jpg" alt="">
+        </div>
+        <div class="col-md-4">
+          <img src="assets/Images/kitchen-layouts-wickes-u-shape-448359.jpg" alt="">
+        </div>
+        <div class="col-md-4">
+          <img src="assets/Images/The-Importance-Of-Interior-Design-4.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+</header> -->
+
+<header>
+  <div class="container">
+    <div class="col-12">
+    <div class="imageList">
+        <ngb-carousel *ngIf="images">
+          <ul>
+            <li *ngFor="let image of images">
+              <ng-template ngbSlide>
+                <img [src]="image" alt="Random first slide">
+                <div class="carousel-caption">
+                  <h3>Kitchen</h3>
+                  <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                </div>
+              </ng-template>
+            </li>
+          </ul>
+        </ngb-carousel>
+        <p>nznzng</p>
+      </div>
+    </div>
+
+
+  </div>
+</header>

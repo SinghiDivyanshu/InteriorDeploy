@@ -1,0 +1,92 @@
+<!-- <header>
+  <div class="">
+    <div class="contain">
+      <div class="row">
+        <div class="imageList" *ngFor="let data of list; let prjCnt = index">
+          <ngb-carousel *ngIf="list[prjCnt]['images']">
+            <ul>
+              <li *ngFor="let image of list[prjCnt]['images']">
+                <ng-template ngbSlide>
+                  <img src="assets/uploads/kitchen/{{data['project']}}/{{image}}" alt="Random first slide">
+                </ng-template>
+              </li>
+            </ul>
+          </ngb-carousel>
+
+          <h3>{{data['project']}}</h3>
+          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+
+        </div>
+      </div>
+    </div>
+
+    <button class="btn btn-lg btn-outline-primary" (click)="open(content, 'kitchen')">Launch demo modal</button>
+  </div>
+</header>
+ -->
+
+
+<header class="contain">
+  <div class="row">
+
+    <div class="col-md-9">
+      <div class="row stage">
+        <div class="" *ngFor="let data of list; let prjCnt = index">
+          <div>
+            <img class="categoryImage" src="assets/uploads/kitchen/{{data.project}}/{{data.images[0]}}"
+              alt="Random first slide">
+          </div>
+          <button class="btn btn-lg btn-outline-primary" (click)="open(content, data.project)">View {{data.project}}
+            Project</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <h3>Feedback from our Customers</h3>
+      <div class="Comment_container">
+        <div *ngFor="let comment of comments">
+          <div class="feedback">
+            <div>{{comment.name}}</div>
+            <div>{{comment.feedback}}</div>
+            <div>
+              <ngb-rating [(rate)]="comment.rating" [readonly]="rating_readonly"></ngb-rating>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- <button class="btn btn-lg btn-outline-primary" (click)="open(content, 'kitchen')">Launch demo modal</button> -->
+</header>
+
+
+<ng-template #content let-modal>
+  <!-- <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">Profile update</h4>
+    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div> -->
+  <!-- <div class="modal-body" -->
+  <ngb-carousel *ngIf="img">
+    <ul>
+      <li *ngFor="let image of img">
+        <ng-template ngbSlide>
+          <img src="assets/uploads/kitchen/{{selectedCat}}/{{image}}" class="modalImg" alt="Random first slide">
+        </ng-template>
+      </li>
+    </ul>
+  </ngb-carousel>
+  <!-- </div> -->
+  <!-- <div class="modal-footer">
+    <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Save</button>
+  </div> -->
+</ng-template>
+
+
+

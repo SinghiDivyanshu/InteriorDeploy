@@ -1,0 +1,16 @@
+CREATE CATERGORY TABLE:
+create table Category ( SNumber int(50) auto_increment primary key, category varchar(100) unique, futureUse varchar(50), futureUse2 int(6));
+
+CREATE project TABLE:
+create table Project ( projectID varchar(100) primary key, category varchar(100), futureUse varchar(50), futureUse2 int(6));
+
+create Admin Table
+create table admin (userID varchar(50), password varchar(100), mobileNo BIGINT(20), email varchar(100) );
+
+create Feedback Table
+create table Feedback ( name varchar(50) auto_increment, feedback varchar(100), rating int(10), futureUse varchar(50), futureUse2 int(6));
+
+
+
+
+
